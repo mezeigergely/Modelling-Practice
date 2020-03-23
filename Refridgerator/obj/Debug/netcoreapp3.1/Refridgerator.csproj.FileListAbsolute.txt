@@ -1,0 +1,11 @@
+D:\PROGRAMMING\codecool\c#\PA\restartPA\Refridgerator\Refridgerator\bin\Debug\netcoreapp3.1\Refridgerator.exe
+D:\PROGRAMMING\codecool\c#\PA\restartPA\Refridgerator\Refridgerator\bin\Debug\netcoreapp3.1\Refridgerator.deps.json
+D:\PROGRAMMING\codecool\c#\PA\restartPA\Refridgerator\Refridgerator\bin\Debug\netcoreapp3.1\Refridgerator.runtimeconfig.json
+D:\PROGRAMMING\codecool\c#\PA\restartPA\Refridgerator\Refridgerator\bin\Debug\netcoreapp3.1\Refridgerator.runtimeconfig.dev.json
+D:\PROGRAMMING\codecool\c#\PA\restartPA\Refridgerator\Refridgerator\bin\Debug\netcoreapp3.1\Refridgerator.dll
+D:\PROGRAMMING\codecool\c#\PA\restartPA\Refridgerator\Refridgerator\bin\Debug\netcoreapp3.1\Refridgerator.pdb
+D:\PROGRAMMING\codecool\c#\PA\restartPA\Refridgerator\Refridgerator\obj\Debug\netcoreapp3.1\Refridgerator.csprojAssemblyReference.cache
+D:\PROGRAMMING\codecool\c#\PA\restartPA\Refridgerator\Refridgerator\obj\Debug\netcoreapp3.1\Refridgerator.AssemblyInfoInputs.cache
+D:\PROGRAMMING\codecool\c#\PA\restartPA\Refridgerator\Refridgerator\obj\Debug\netcoreapp3.1\Refridgerator.AssemblyInfo.cs
+D:\PROGRAMMING\codecool\c#\PA\restartPA\Refridgerator\Refridgerator\obj\Debug\netcoreapp3.1\Refridgerator.dll
+D:\PROGRAMMING\codecool\c#\PA\restartPA\Refridgerator\Refridgerator\obj\Debug\netcoreapp3.1\Refridgerator.pdb

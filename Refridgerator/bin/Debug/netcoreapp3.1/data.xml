@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ArrayOfFridge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Fridge xsi:type="NormalFridge">
+    <name>h</name>
+    <capacity>100</capacity>
+    <variCapacity>100</variCapacity>
+  </Fridge>
+</ArrayOfFridge>
