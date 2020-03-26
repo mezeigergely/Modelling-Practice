@@ -6,7 +6,7 @@ namespace Refridgerator
 {
     public class MiniFridge : Fridge
     {
-        public MiniFridge(string name, int capacity, int varicapacity)/* : base(name, capacity, varicapacity)*/
+        public MiniFridge(string name, int capacity, int varicapacity)
         {
             this.name = name;
             this.capacity = capacity;

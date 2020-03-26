@@ -6,7 +6,7 @@ namespace Refridgerator
 {
     public class NormalFridge : Fridge
     {
-        public NormalFridge(string name, int capacity, int varicapacity)/* : base(name, capacity, varicapacity)*/
+        public NormalFridge(string name, int capacity, int varicapacity)
         {
             this.name = name;
             this.capacity = capacity;

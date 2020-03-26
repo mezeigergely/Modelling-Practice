@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\PROGRAMMING\\codecool\\c#\\PA\\restartPA\\Refridgerator\\Refridgerator\\Refridgerator.csproj": {}
+    "D:\\PROGRAMMING\\codecool\\c#\\PA\\Refridgerator\\Refridgerator\\Refridgerator.csproj": {}
   },
   "projects": {
-    "d:\\PROGRAMMING\\codecool\\c#\\PA\\restartPA\\Refridgerator\\Refridgerator\\Refridgerator.csproj": {
+    "D:\\PROGRAMMING\\codecool\\c#\\PA\\Refridgerator\\Refridgerator\\Refridgerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\PROGRAMMING\\codecool\\c#\\PA\\restartPA\\Refridgerator\\Refridgerator\\Refridgerator.csproj",
+        "projectUniqueName": "D:\\PROGRAMMING\\codecool\\c#\\PA\\Refridgerator\\Refridgerator\\Refridgerator.csproj",
         "projectName": "Refridgerator",
-        "projectPath": "d:\\PROGRAMMING\\codecool\\c#\\PA\\restartPA\\Refridgerator\\Refridgerator\\Refridgerator.csproj",
+        "projectPath": "D:\\PROGRAMMING\\codecool\\c#\\PA\\Refridgerator\\Refridgerator\\Refridgerator.csproj",
         "packagesPath": "C:\\Users\\Geris\\.nuget\\packages\\",
-        "outputPath": "d:\\PROGRAMMING\\codecool\\c#\\PA\\restartPA\\Refridgerator\\Refridgerator\\obj\\",
+        "outputPath": "D:\\PROGRAMMING\\codecool\\c#\\PA\\Refridgerator\\Refridgerator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

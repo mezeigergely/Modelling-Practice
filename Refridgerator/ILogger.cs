@@ -7,8 +7,8 @@ namespace Refridgerator
     interface ILogger
     {
         public void Save(List<Fridge> fridges);
-        public void SaveFood(List<Food> foods, string filepath);
-        public List<Fridge> Load(string filepath);
-        public List<Food> LoadFood(string filepath);
+        public void SaveFood(List<Food> foods, string filename);
+        public List<Fridge> Load(string filename);
+        public List<Food> LoadFood(string filename);
     }
 }

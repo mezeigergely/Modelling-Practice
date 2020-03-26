@@ -202,6 +202,7 @@ namespace Refridgerator
                         string fridgename = Console.ReadLine();
                         Console.Write("Food ID: ");
                         int foodID = int.Parse(Console.ReadLine());
+                        
                         int temp = 0;
 
 
@@ -217,7 +218,17 @@ namespace Refridgerator
                                         temp = food.id;
                                         fridge.variCapacity -= food.size;
                                     }
+                                    else
+                                    {
+                                        Console.WriteLine("There is no {0} food ID!", foodID);
+                                        return true;
+                                    }
                                 }
+                            }
+                            else
+                            {
+                                Console.WriteLine("There is no {0} fridge!",fridgename);
+                                return true;
                             }
                         }
                         for (int i = table.Count - 1; i >= 0; i--)
@@ -299,36 +310,26 @@ namespace Refridgerator
                     Console.ForegroundColor = ConsoleColor.Gray;
                     return true;
                 case "8":
-            
                     logger.Save(fridges);
-                    //if (Shelves.Count > 0)
-                    //{
-                    //    logger.SaveShelf(Shelves, "shelfInventory.xml");
-                    //}
                     if (Table.Count > 0)
                     {
                         logger.SaveFood(Table, "foodsonthetable.xml");
                     }
-                    Console.WriteLine("We saved your work!");
+                    Console.WriteLine("Saved!");
                     return true;
                 case "9":
-                    //Load
                     try
                     {
                         fridges = logger.Load("data.xml");
-                        //if (File.Exists("shelfInventory.xml"))
-                        //{
-                        //    Shelves = logger.LoadShelf("shelfInventory.xml");
-                        //}
                         if (File.Exists("foodsonthetable.xml"))
                         {
                             Table = logger.LoadFood("foodsonthetable.xml");
                         }
-                        Console.WriteLine("We loaded your previous simulation");
+                        Console.WriteLine("Loaded!");
                     }
-                    catch (System.IO.FileNotFoundException)
+                    catch (Exception)
                     {
-                        Console.WriteLine("No previous save!");
+                        Console.WriteLine("There is no saved data.");
                     }
                     return true;
                 case "0":

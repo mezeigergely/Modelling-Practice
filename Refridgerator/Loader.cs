@@ -6,42 +6,42 @@ namespace Refridgerator
 {
     class Loader : ILogger
     {
-        string path = "data.xml";
-        public List<Fridge> Load(string path)
+        string filename = "data.xml";
+        public List<Fridge> Load(string filename)
         {
-            var result = new List<Fridge>();
-            XmlSerializer serializer3 = new XmlSerializer(typeof(List<Fridge>));
-            using (FileStream fs2 = File.OpenRead(path))
+            var item = new List<Fridge>();
+            XmlSerializer fridgeSER = new XmlSerializer(typeof(List<Fridge>));
+            using (FileStream fileStream = File.OpenRead(filename))
             {
-                result = (List<Fridge>)serializer3.Deserialize(fs2);
+                item = (List<Fridge>)fridgeSER.Deserialize(fileStream);
             }
-            return result;
+            return item;
         }
 
-        public void Save(List<Fridge> refigrigators)
+        public void Save(List<Fridge> fridges)
         {
-            using (Stream fs = new FileStream(path, FileMode.Create, FileAccess.ReadWrite, FileShare.None))
+            using (Stream stream = new FileStream(filename, FileMode.Create, FileAccess.ReadWrite, FileShare.None))
             {
-                XmlSerializer serializer2 = new XmlSerializer(typeof(List<Fridge>));
-                serializer2.Serialize(fs, refigrigators);
+                XmlSerializer fridgeSER = new XmlSerializer(typeof(List<Fridge>));
+                fridgeSER.Serialize(stream, fridges);
             }
         }
-        public List<Food> LoadFood(string path)
+        public List<Food> LoadFood(string filename)
         {
-            var result = new List<Food>();
-            XmlSerializer serializer3 = new XmlSerializer(typeof(List<Food>));
-            using (FileStream fs2 = File.OpenRead(path))
+            var item = new List<Food>();
+            XmlSerializer foodSER = new XmlSerializer(typeof(List<Food>));
+            using (FileStream fileStream = File.OpenRead(filename))
             {
-                result = (List<Food>)serializer3.Deserialize(fs2);
+                item = (List<Food>)foodSER.Deserialize(fileStream);
             }
-            return result;
+            return item;
         }
-        public void SaveFood(List<Food> foodList, string path)
+        public void SaveFood(List<Food> foodList, string filename)
         {
-            using (Stream fs = new FileStream(path, FileMode.Create, FileAccess.ReadWrite, FileShare.None))
+            using (Stream fileStream = new FileStream(filename, FileMode.Create, FileAccess.ReadWrite, FileShare.None))
             {
-                XmlSerializer serializer2 = new XmlSerializer(typeof(List<Food>));
-                serializer2.Serialize(fs, foodList);
+                XmlSerializer foodSER = new XmlSerializer(typeof(List<Food>));
+                foodSER.Serialize(fileStream, foodList);
             }
         }
     }
